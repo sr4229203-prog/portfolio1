@@ -46,22 +46,13 @@ nav{position:fixed;inset:0 0 auto 0;z-index:500;height:66px;padding:0 48px;displ
 .nav-btn{font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:9px 18px;text-decoration:none;border:1px solid var(--border2);color:var(--mid);transition:all .2s;}
 .nav-btn.hi{border-color:var(--amberdim);color:var(--amber);}
 .nav-btn:hover{border-color:var(--amber);color:var(--amber);background:var(--amberfade);}
-@media(max-width:1024px){.nav-links{gap:20px;}.nav-btn{padding:8px 14px;font-size:10px;}}
-@media(max-width:900px){.nav-links{display:none;}nav{padding:0 24px;height:60px;}.nav-id{font-size:11px;}.nav-cta{gap:8px;}}
-@media(max-width:640px){nav{padding:0 16px;height:56px;}.nav-id{font-size:10px;gap:6px;}.nav-btn.hi{padding:7px 12px;font-size:9px;}}
-@media(max-width:480px){.nav-btn:not(.hi){display:none;}nav{height:52px;}.nav-cta{gap:6px;}.nav-id{gap:4px;}}
+@media(max-width:900px){.nav-links{display:none;}nav{padding:0 24px;}}
+@media(max-width:500px){.nav-btn:not(.hi){display:none;}}
 .wrap{max-width:1280px;margin:0 auto;padding:130px 48px;}
-@media(max-width:1024px){.wrap{padding:110px 40px;}}
 @media(max-width:768px){.wrap{padding:100px 22px;}}
-@media(max-width:640px){.wrap{padding:90px 18px;}}
-@media(max-width:480px){.wrap{padding:80px 16px;}}
 .sec-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--amber);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-@media(max-width:768px){.sec-eyebrow{font-size:10px;gap:8px;margin-bottom:12px;}}
-@media(max-width:480px){.sec-eyebrow{font-size:9px;gap:6px;margin-bottom:10px;}}
 .sec-eyebrow::before{content:"";width:22px;height:1px;background:var(--amber);}
 h2.ht{font-size:clamp(34px,5.5vw,58px);font-weight:800;line-height:1.02;letter-spacing:-.02em;margin-bottom:60px;}
-@media(max-width:768px){h2.ht{font-size:clamp(28px,5vw,48px);margin-bottom:50px;}}
-@media(max-width:480px){h2.ht{font-size:clamp(24px,4.5vw,36px);margin-bottom:40px;}}
 h2.ht em{color:transparent;-webkit-text-stroke:1.5px var(--border2);font-style:normal;}
 .rv{opacity:0;transform:translateY(44px);transition:opacity .75s,transform .75s;}
 .rv.on{opacity:1;transform:none;}
@@ -72,41 +63,26 @@ h2.ht em{color:transparent;-webkit-text-stroke:1.5px var(--border2);font-style:n
 #hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;}
 #particles{position:absolute;inset:0;width:100%;height:100%;}
 .hero-inner{max-width:1280px;margin:0 auto;padding:0 48px;width:100%;display:grid;grid-template-columns:1.15fr 1fr;gap:80px;align-items:center;padding-top:66px;position:relative;z-index:1;}
-@media(max-width:1024px){.hero-inner{gap:60px;padding:0 40px;}}
-@media(max-width:920px){.hero-inner{grid-template-columns:1fr;gap:40px;padding:0 22px;}.hero-vis{display:none;}}
-@media(max-width:640px){.hero-inner{padding:66px 18px 40px;gap:30px;}}
-@media(max-width:500px){.hero-inner{padding:66px 16px 40px;gap:20px;}}
+@media(max-width:920px){.hero-inner{grid-template-columns:1fr;}.hero-vis{display:none;}}
+@media(max-width:500px){.hero-inner{padding:66px 22px 40px;}}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;padding:7px 16px;border:1px solid var(--amberdim);color:var(--amber);background:var(--amberfade);margin-bottom:24px;}
 .hero-badge .dot2{width:5px;height:5px;background:var(--amber);border-radius:50%;animation:pulse 1.5s infinite;}
 h1{font-size:clamp(52px,8.5vw,100px);font-weight:800;line-height:.93;letter-spacing:-.03em;margin-bottom:12px;}
-@media(max-width:768px){h1{font-size:clamp(42px,7vw,70px);}}
-@media(max-width:480px){h1{font-size:clamp(32px,6vw,52px);}}
 h1 .ln1{display:block;color:var(--hi);}
 h1 .ln2{display:block;color:transparent;-webkit-text-stroke:2px var(--amber);}
 .tw-wrap{font-family:var(--mono);font-size:17px;color:var(--mid);margin:24px 0 28px;min-height:28px;}
 .tw-wrap .caret{border-right:2px solid var(--amber);animation:blink .85s infinite;}
 @keyframes blink{0%,100%{border-color:var(--amber);}50%{border-color:transparent;}}
 .hero-p{color:var(--mid);font-size:16px;line-height:1.85;max-width:500px;margin-bottom:38px;}
-@media(max-width:768px){.hero-p{font-size:15px;line-height:1.8;margin-bottom:32px;}}
-@media(max-width:480px){.hero-p{font-size:14px;line-height:1.75;margin-bottom:26px;}}
 .hero-p b{color:var(--hi);}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
-@media(max-width:640px){.hero-btns{gap:10px;}}
-@media(max-width:480px){.hero-btns{gap:8px;}}
 .hbtn{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;padding:15px 26px;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:all .25s;}
-@media(max-width:768px){.hbtn{font-size:12px;padding:13px 22px;}}
-@media(max-width:480px){.hbtn{font-size:11px;padding:11px 18px;gap:5px;}}
 .hbtn.s{background:var(--amber);color:#04080F;font-weight:700;}
 .hbtn.s:hover{background:#fff;transform:translateY(-3px);box-shadow:0 10px 32px rgba(245,166,35,.3);}
 .hbtn.o{border:1px solid var(--border2);color:var(--mid);}
 .hbtn.o:hover{border-color:var(--amber);color:var(--amber);background:var(--amberfade);}
 .hero-stats{display:flex;gap:40px;margin-top:44px;padding-top:44px;border-top:1px solid var(--border);flex-wrap:wrap;}
-@media(max-width:1024px){.hero-stats{gap:30px;margin-top:36px;padding-top:36px;}}
-@media(max-width:768px){.hero-stats{gap:25px;margin-top:30px;padding-top:30px;}}
-@media(max-width:480px){.hero-stats{gap:20px;margin-top:24px;padding-top:24px;}}
 .stat .n{font-family:var(--mono);font-size:36px;font-weight:700;color:var(--amber);}
-@media(max-width:768px){.stat .n{font-size:28px;}}
-@media(max-width:480px){.stat .n{font-size:24px;}}
 .stat .l{font-size:12px;color:var(--low);margin-top:3px;letter-spacing:.05em;}
 .hero-vis{position:relative;display:flex;align-items:center;justify-content:center;}
 .ring{position:absolute;border:1px dashed var(--border);border-radius:50%;animation:spin 22s linear infinite;}
@@ -124,33 +100,21 @@ h1 .ln2{display:block;color:transparent;-webkit-text-stroke:2px var(--amber);}
 .ft-b{bottom:60px;right:-80px;color:var(--blue);border-color:rgba(59,139,255,.3);}
 .ft-c{bottom:130px;left:-80px;color:var(--amber);border-color:var(--amberdim);}
 .about-g{display:grid;grid-template-columns:1.1fr 1fr;gap:76px;align-items:start;}
-@media(max-width:1024px){.about-g{gap:60px;}}
-@media(max-width:840px){.about-g{grid-template-columns:1fr;gap:40px;}}
-@media(max-width:640px){.about-g{gap:30px;}}
+@media(max-width:840px){.about-g{grid-template-columns:1fr;}}
 .about-g p{color:var(--mid);line-height:1.9;font-size:16px;margin-bottom:22px;}
-@media(max-width:768px){.about-g p{font-size:15px;line-height:1.85;margin-bottom:18px;}}
-@media(max-width:480px){.about-g p{font-size:14px;line-height:1.8;margin-bottom:16px;}}
 .about-g p b{color:var(--hi);}
 .info-table{font-family:var(--mono);font-size:13px;background:var(--card);border:1px solid var(--border);}
-@media(max-width:768px){.info-table{font-size:12px;}}
-@media(max-width:480px){.info-table{font-size:11px;}}
 .itr{display:flex;justify-content:space-between;align-items:center;padding:17px 22px;border-bottom:1px solid var(--border);gap:16px;}
-@media(max-width:768px){.itr{padding:15px 18px;gap:12px;}}
-@media(max-width:480px){.itr{flex-direction:column;align-items:flex-start;padding:12px 16px;gap:6px;}}
 .itr:last-child{border:none;}
 .itr .k{color:var(--low);font-size:11px;letter-spacing:.1em;flex-shrink:0;}
 .itr .v{color:var(--hi);text-align:right;}
 .chip{display:inline-block;padding:3px 8px;background:var(--amberfade);border:1px solid var(--amberdim);color:var(--amber);font-size:10px;margin-left:6px;}
 .skills-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);}
-@media(max-width:1024px){.skills-g{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:768px){.skills-g{grid-template-columns:1fr;}}
-@media(max-width:480px){.skills-g{grid-template-columns:1fr;gap:1px;}}
 .sk-panel{background:var(--card);padding:34px 28px;position:relative;overflow:hidden;transition:background .3s;}
-@media(max-width:768px){.sk-panel{padding:28px 22px;}}
-@media(max-width:480px){.sk-panel{padding:22px 16px;}}
+.sk-panel::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--gd);opacity:0;transition:opacity .3s;}
+.sk-panel:hover{background:var(--bg3);}
+.sk-panel:hover::before{opacity:1;}
 .sk-panel h3{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--amber);text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:10px;}
-@media(max-width:768px){.sk-panel h3{font-size:10px;margin-bottom:20px;}}
-@media(max-width:480px){.sk-panel h3{font-size:9px;margin-bottom:16px;}}
 .sk-panel h3 .ico{width:30px;height:30px;background:var(--amberfade);border:1px solid var(--amberdim);display:flex;align-items:center;justify-content:center;font-size:15px;}
 .sbi{margin-bottom:18px;}
 .sbi:last-child{margin:0;}
@@ -161,22 +125,14 @@ h1 .ln2{display:block;color:transparent;-webkit-text-stroke:2px var(--amber);}
 .sbi-fill{height:100%;background:linear-gradient(90deg,var(--amber),#FFB84D);width:0;transition:width 1.3s cubic-bezier(.4,0,.2,1);}
 .app-section{margin-bottom:84px;}
 .app-hdr{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:20px;border-bottom:1px solid var(--border);margin-bottom:30px;flex-wrap:wrap;gap:14px;}
-@media(max-width:768px){.app-hdr{align-items:flex-start;padding-bottom:16px;margin-bottom:24px;}}
-@media(max-width:480px){.app-hdr{flex-direction:column;gap:12px;padding-bottom:14px;margin-bottom:20px;}}
 .app-hdr h3{font-size:22px;font-weight:600;}
-@media(max-width:768px){.app-hdr h3{font-size:18px;}}
-@media(max-width:480px){.app-hdr h3{font-size:16px;}}
 .app-hdr .tags{display:flex;gap:8px;flex-wrap:wrap;}
 .atag{font-family:var(--mono);font-size:10px;letter-spacing:.07em;padding:5px 12px;border:1px solid var(--border2);color:var(--mid);}
 .atag.hi{border-color:var(--amberdim);color:var(--amber);background:var(--amberfade);}
 .phone-row{display:flex;gap:20px;overflow-x:auto;padding:16px 4px 28px;scrollbar-width:thin;scrollbar-color:var(--border2) transparent;}
-@media(max-width:768px){.phone-row{gap:16px;padding:14px 2px 24px;}}
-@media(max-width:480px){.phone-row{gap:12px;padding:12px 0 20px;}}
 .phone-row::-webkit-scrollbar{height:4px;}
 .phone-row::-webkit-scrollbar-thumb{background:var(--border2);}
 .pcard{flex:0 0 auto;width:186px;cursor:pointer;}
-@media(max-width:768px){.pcard{width:160px;}}
-@media(max-width:480px){.pcard{width:140px;}}
 .pcard-inner{background:linear-gradient(160deg,#12203A,#05090F);border:1px solid var(--border);padding:8px 8px 12px;transition:transform .4s,box-shadow .4s;transform-style:preserve-3d;}
 .pcard:hover .pcard-inner{transform:rotateY(-7deg) rotateX(4deg) translateY(-10px);box-shadow:22px 32px 64px rgba(0,0,0,.7),0 0 0 1px var(--amberdim);}
 .pcard-notch{width:48px;height:5px;background:var(--border2);border-radius:3px;margin:0 auto 8px;}
@@ -185,122 +141,189 @@ h1 .ln2{display:block;color:transparent;-webkit-text-stroke:2px var(--amber);}
 .pcard:hover .pcard-screen img{transform:scale(1.05);}
 .pcard-lbl{font-family:var(--mono);font-size:10px;color:var(--low);text-align:center;padding-top:10px;line-height:1.5;}
 .apk-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;background:var(--amberfade);border:1px solid var(--amberdim);padding:22px 28px;margin-top:6px;}
-@media(max-width:768px){.apk-row{gap:14px;padding:18px 22px;}}
-@media(max-width:480px){.apk-row{flex-direction:column;gap:12px;padding:16px 18px;align-items:flex-start;}}
 .apk-l{display:flex;align-items:center;gap:14px;}
-@media(max-width:480px){.apk-l{width:100%;}}
 .apk-box{width:44px;height:44px;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;font-weight:700;color:#04080F;flex-shrink:0;}
 .apk-l h4{font-size:15px;font-weight:600;margin-bottom:3px;}
 .apk-l p{font-family:var(--mono);font-size:11px;color:var(--mid);}
 .obtn{font-family:var(--mono);font-size:12px;letter-spacing:.05em;padding:12px 22px;border:1px solid var(--amber);color:var(--amber);text-decoration:none;transition:all .22s;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
 .obtn:hover{background:var(--amber);color:#04080F;}
 .proj-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);}
-@media(max-width:1024px){.proj-g{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:768px){.proj-g{grid-template-columns:1fr;}}
-@media(max-width:480px){.proj-g{grid-template-columns:1fr;}}
 .pc{background:var(--card);padding:34px 28px;text-decoration:none;display:block;position:relative;overflow:hidden;transition:background .3s;}
-@media(max-width:768px){.pc{padding:28px 22px;}}
-@media(max-width:480px){.pc{padding:22px 16px;}}
+.pc:hover{background:var(--bg3);}
+.pc::after{content:"↗";position:absolute;top:22px;right:22px;font-size:18px;color:var(--amber);opacity:0;transform:translate(-6px,6px);transition:all .3s;}
+.pc:hover::after{opacity:1;transform:none;}
+.pc-num{font-family:var(--mono);font-size:11px;color:var(--low);margin-bottom:16px;letter-spacing:.1em;}
 .pc-name{font-size:20px;font-weight:600;margin-bottom:10px;transition:color .2s;}
-@media(max-width:768px){.pc-name{font-size:18px;margin-bottom:8px;}}
-@media(max-width:480px){.pc-name{font-size:16px;}}
+.pc:hover .pc-name{color:var(--amber);}
 .pc-desc{color:var(--mid);font-size:14px;line-height:1.65;margin-bottom:20px;}
-@media(max-width:768px){.pc-desc{font-size:13px;line-height:1.6;margin-bottom:16px;}}
-@media(max-width:480px){.pc-desc{font-size:12px;line-height:1.55;margin-bottom:12px;}}
 .pc-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
 .pc-tag{font-family:var(--mono);font-size:10px;padding:4px 10px;border:1px solid var(--border2);color:var(--low);}
 .pc-url{font-family:var(--mono);font-size:11px;color:var(--lower);transition:color .2s;}
 .pc:hover .pc-url{color:var(--amber);}
 .svc-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;}
-@media(max-width:1024px){.svc-g{grid-template-columns:repeat(2,1fr);gap:18px;}}
-@media(max-width:768px){.svc-g{grid-template-columns:1fr;gap:16px;}}
-@media(max-width:480px){.svc-g{grid-template-columns:1fr;gap:14px;}}
 .svc{background:var(--card);border:1px solid var(--border);padding:36px 28px;position:relative;overflow:hidden;transition:all .3s;}
-@media(max-width:768px){.svc{padding:30px 22px;}}
-@media(max-width:480px){.svc{padding:24px 16px;}}
+.svc:hover{border-color:var(--amberdim);transform:translateY(-5px);box-shadow:0 24px 48px rgba(0,0,0,.5);}
+.svc::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,var(--amberfade),transparent);opacity:0;transition:opacity .3s;}
+.svc:hover::before{opacity:1;}
+.svc-n{font-family:var(--mono);font-size:11px;color:var(--amberdim);letter-spacing:.1em;margin-bottom:18px;}
+.svc-ico{font-size:28px;margin-bottom:14px;}
 .svc h3{font-size:18px;font-weight:600;margin-bottom:10px;}
-@media(max-width:768px){.svc h3{font-size:16px;}}
-@media(max-width:480px){.svc h3{font-size:14px;}}
 .svc p{color:var(--mid);font-size:14px;line-height:1.7;}
-@media(max-width:768px){.svc p{font-size:13px;line-height:1.65;}}
-@media(max-width:480px){.svc p{font-size:12px;line-height:1.6;}}
 .svc-cta{margin-top:46px;background:var(--amberfade);border:1px solid var(--amberdim);padding:30px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
-@media(max-width:768px){.svc-cta{margin-top:40px;padding:24px 28px;gap:16px;}}
-@media(max-width:480px){.svc-cta{margin-top:32px;padding:20px 18px;flex-direction:column;align-items:flex-start;gap:12px;}}
 .svc-cta p{font-size:16px;font-weight:500;max-width:480px;}
-@media(max-width:768px){.svc-cta p{font-size:14px;}}
-@media(max-width:480px){.svc-cta p{font-size:13px;}}
 .svc-cta span{color:var(--amber);}
 .contact-g{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;}
-@media(max-width:1024px){.contact-g{gap:60px;}}
-@media(max-width:840px){.contact-g{grid-template-columns:1fr;gap:40px;}}
-@media(max-width:640px){.contact-g{gap:30px;}}
+@media(max-width:840px){.contact-g{grid-template-columns:1fr;}}
 .c-left h2{font-size:clamp(30px,4.5vw,48px);font-weight:800;margin-bottom:16px;}
-@media(max-width:768px){.c-left h2{font-size:clamp(26px,4vw,40px);}}
-@media(max-width:480px){.c-left h2{font-size:clamp(22px,3.5vw,32px);}}
 .c-sub{color:var(--mid);font-size:16px;line-height:1.8;margin-bottom:38px;}
-@media(max-width:768px){.c-sub{font-size:15px;line-height:1.75;margin-bottom:32px;}}
-@media(max-width:480px){.c-sub{font-size:14px;line-height:1.7;margin-bottom:26px;}}
 .c-links{display:flex;flex-direction:column;}
-@media(max-width:480px){.c-links{gap:0;}}
 .clink{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--hi);transition:color .2s;}
-@media(max-width:768px){.clink{padding:16px 0;}}
-@media(max-width:480px){.clink{padding:14px 0;flex-direction:column;align-items:flex-start;gap:6px;}}
+.clink:hover{color:var(--amber);}
 .clab{font-family:var(--mono);font-size:10px;letter-spacing:.13em;color:var(--low);}
-@media(max-width:480px){.clab{font-size:9px;}}
 .cval{font-family:var(--mono);font-size:13px;}
-@media(max-width:768px){.cval{font-size:12px;}}
-@media(max-width:480px){.cval{font-size:11px;}}
 .c-form{background:var(--card);border:1px solid var(--border);padding:38px 32px;position:relative;}
-@media(max-width:768px){.c-form{padding:30px 24px;}}
-@media(max-width:480px){.c-form{padding:24px 18px;}}
 .c-form::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--gd);}
 .c-form h3{font-size:20px;font-weight:600;margin-bottom:26px;}
-@media(max-width:768px){.c-form h3{font-size:18px;margin-bottom:20px;}}
-@media(max-width:480px){.c-form h3{font-size:16px;margin-bottom:18px;}}
 .fld{margin-bottom:18px;}
-@media(max-width:768px){.fld{margin-bottom:16px;}}
-@media(max-width:480px){.fld{margin-bottom:14px;}}
 .fld label{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--low);text-transform:uppercase;display:block;margin-bottom:8px;}
-@media(max-width:480px){.fld label{font-size:9px;margin-bottom:6px;}}
 .fld input,.fld textarea,.fld select{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--hi);font-family:var(--font);font-size:14px;padding:13px 16px;transition:border-color .2s;resize:none;appearance:none;}
-@media(max-width:768px){.fld input,.fld textarea,.fld select{font-size:13px;padding:11px 14px;}}
-@media(max-width:480px){.fld input,.fld textarea,.fld select{font-size:12px;padding:10px 12px;}}
 .fld input:focus,.fld textarea:focus,.fld select:focus{border-color:var(--amber);outline:none;}
 .fld input::placeholder,.fld textarea::placeholder{color:var(--lower);}
 .fld select option{background:var(--card);}
 .sbtn{width:100%;background:var(--amber);color:#04080F;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.07em;padding:17px;border:none;cursor:pointer;transition:all .22s;display:flex;align-items:center;justify-content:center;gap:8px;}
-@media(max-width:768px){.sbtn{font-size:12px;padding:15px;}}
-@media(max-width:480px){.sbtn{font-size:11px;padding:13px;gap:6px;}}
 .sbtn:hover{background:#fff;transform:translateY(-2px);box-shadow:0 10px 28px rgba(245,166,35,.35);}
 .fstatus{font-family:var(--mono);font-size:12px;text-align:center;min-height:20px;margin-top:14px;}
 .fstatus.ok{color:var(--green);}
 .fstatus.err{color:var(--red);}
 footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text-align:center;}
-@media(max-width:768px){footer{padding:40px 24px;}}
-@media(max-width:480px){footer{padding:32px 16px;}}
 .foot-name{font-size:22px;font-weight:800;margin-bottom:12px;letter-spacing:-.01em;}
-@media(max-width:768px){.foot-name{font-size:20px;}}
-@media(max-width:480px){.foot-name{font-size:18px;}}
 .foot-sub{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--low);margin-bottom:22px;}
-@media(max-width:768px){.foot-sub{font-size:10px;}}
-@media(max-width:480px){.foot-sub{font-size:9px;margin-bottom:18px;}}
 .foot-links{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;}
-@media(max-width:768px){.foot-links{gap:20px;}}
-@media(max-width:480px){.foot-links{gap:14px;}}
 .foot-links a{font-family:var(--mono);font-size:11px;color:var(--amber);text-decoration:none;letter-spacing:.06em;transition:color .2s;}
-@media(max-width:480px){.foot-links a{font-size:9px;letter-spacing:.04em;}}
 .foot-links a:hover{color:#fff;}
+
+/* ===== ADVANCED: SCROLL PROGRESS ===== */
+#sprog{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,var(--amber),#FF6B35);z-index:10001;transition:width .1s linear;}
+
+/* ===== ADVANCED: BOOT SEQUENCE LOADER ===== */
+#loader{flex-direction:column;gap:0;padding:40px;}
+.boot-box{width:min(460px,86vw);border:1px solid var(--border2);background:var(--bg2);}
+.boot-head{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--border2);font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:var(--low);}
+.boot-head .bh-dot{width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px var(--amber);animation:pulse 1.4s infinite;}
+.boot-log{font-family:var(--mono);font-size:11px;line-height:1.9;color:var(--mid);padding:16px 18px;min-height:190px;}
+.boot-log .ok{color:var(--green);}
+.boot-log .cur-line{color:var(--hi);}
+.boot-log .bl{display:inline-block;width:7px;height:13px;background:var(--amber);vertical-align:middle;margin-left:2px;animation:blink .85s infinite;}
+.boot-bar-row{display:flex;align-items:center;gap:12px;padding:0 18px 18px;}
+.boot-pct{font-family:var(--mono);font-size:11px;color:var(--amber);width:38px;}
+.boot-track{flex:1;height:2px;background:var(--border2);overflow:hidden;}
+.boot-fill{height:100%;width:0%;background:var(--amber);transition:width .25s linear;}
+
+/* ===== ADVANCED: HUD FLIGHT STRIP ===== */
+.hud{display:flex;align-items:center;gap:0;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--low);margin-top:34px;border:1px solid var(--border);background:var(--card);}
+.hud-cell{padding:11px 18px;border-right:1px solid var(--border);display:flex;align-items:center;gap:8px;white-space:nowrap;}
+.hud-cell:last-child{border-right:none;}
+.hud-cell b{color:var(--hi);font-weight:500;}
+.hud-cell .hud-dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite;flex-shrink:0;}
+@media(max-width:640px){.hud{flex-wrap:wrap;}.hud-cell{flex:1 1 50%;border-bottom:1px solid var(--border);}}
+
+/* ===== ADVANCED: MOBILE MENU ===== */
+.menu-btn{display:none;flex-direction:column;gap:4px;width:34px;height:34px;border:1px solid var(--border2);background:transparent;cursor:pointer;align-items:center;justify-content:center;flex-shrink:0;}
+.menu-btn span{width:16px;height:1.5px;background:var(--mid);transition:all .25s;}
+.menu-btn.open span:nth-child(1){transform:translateY(5.5px) rotate(45deg);}
+.menu-btn.open span:nth-child(2){opacity:0;}
+.menu-btn.open span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg);}
+@media(max-width:900px){.menu-btn{display:flex;}}
+#mobilemenu{position:fixed;inset:66px 0 0 0;background:rgba(4,8,15,.98);backdrop-filter:blur(20px);z-index:499;display:flex;flex-direction:column;justify-content:center;padding:40px;gap:4px;transform:translateY(-12px);opacity:0;visibility:hidden;transition:all .3s;}
+#mobilemenu.open{transform:translateY(0);opacity:1;visibility:visible;}
+#mobilemenu a{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--hi);text-decoration:none;padding:14px 0;border-bottom:1px solid var(--border);letter-spacing:.02em;}
+#mobilemenu a span{color:var(--amberdim);font-size:13px;margin-right:12px;}
+#mobilemenu .mm-foot{margin-top:30px;display:flex;gap:16px;font-family:var(--mono);font-size:12px;}
+#mobilemenu .mm-foot a{border:none;padding:0;font-size:12px;color:var(--amber);font-weight:400;}
+
+/* ===== ADVANCED: COMMAND PALETTE ===== */
+.cmdk-btn{font-family:var(--mono);font-size:11px;letter-spacing:.05em;padding:9px 14px;border:1px solid var(--border2);color:var(--low);background:transparent;cursor:pointer;display:flex;align-items:center;gap:10px;transition:all .2s;}
+.cmdk-btn:hover{border-color:var(--amberdim);color:var(--amber);}
+.cmdk-btn kbd{font-family:var(--mono);font-size:10px;background:var(--border);color:var(--mid);padding:2px 6px;border-radius:2px;}
+@media(max-width:640px){.cmdk-btn{display:none;}}
+#cmdk-overlay{position:fixed;inset:0;background:rgba(4,8,15,.75);backdrop-filter:blur(6px);z-index:10002;display:flex;align-items:flex-start;justify-content:center;padding-top:14vh;opacity:0;visibility:hidden;transition:opacity .2s;}
+#cmdk-overlay.open{opacity:1;visibility:visible;}
+.cmdk-box{width:min(560px,90vw);background:var(--card);border:1px solid var(--border2);box-shadow:0 30px 80px rgba(0,0,0,.6);transform:translateY(-10px);transition:transform .2s;}
+#cmdk-overlay.open .cmdk-box{transform:translateY(0);}
+.cmdk-input-row{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--border);}
+.cmdk-input-row span{color:var(--amber);font-family:var(--mono);}
+#cmdk-input{flex:1;background:transparent;border:none;outline:none;color:var(--hi);font-family:var(--font);font-size:15px;}
+#cmdk-input::placeholder{color:var(--lower);}
+.cmdk-list{max-height:340px;overflow-y:auto;padding:8px;}
+.cmdk-item{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;cursor:pointer;font-size:14px;color:var(--mid);gap:10px;}
+.cmdk-item .ci-l{display:flex;align-items:center;gap:12px;}
+.cmdk-item .ci-tag{font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--low);border:1px solid var(--border2);padding:2px 7px;}
+.cmdk-item.active{background:var(--amberfade);color:var(--hi);}
+.cmdk-item.active .ci-tag{color:var(--amber);border-color:var(--amberdim);}
+.cmdk-empty{padding:30px 20px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--low);}
+.cmdk-foot{display:flex;gap:16px;padding:10px 20px;border-top:1px solid var(--border);font-family:var(--mono);font-size:10px;color:var(--low);}
+.cmdk-foot kbd{background:var(--border);padding:1px 5px;border-radius:2px;color:var(--mid);}
+
+/* ===== ADVANCED: SPOTLIGHT CARD HOVER ===== */
+.sk-panel,.svc,.pc{position:relative;}
+.spotlight::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(280px circle at var(--mx,50%) var(--my,50%),rgba(245,166,35,.10),transparent 70%);}
+.spotlight:hover::after{opacity:1;}
+
+/* ===== ADVANCED: FILTER TABS ===== */
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;}
+.ftab{font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:9px 18px;border:1px solid var(--border2);color:var(--mid);background:transparent;cursor:pointer;transition:all .2s;}
+.ftab:hover{border-color:var(--amberdim);color:var(--amber);}
+.ftab.active{border-color:var(--amber);color:var(--amber);background:var(--amberfade);}
+.app-section{transition:opacity .35s,transform .35s;}
+.app-section.hidden-f{display:none;}
+
+/* ===== ADVANCED: MAGNETIC BTN ===== */
+.magnetic{will-change:transform;}
+
+/* ===== ADVANCED: TOAST ===== */
+#toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--card);border:1px solid var(--amberdim);color:var(--hi);font-family:var(--mono);font-size:12px;padding:12px 22px;z-index:10003;opacity:0;pointer-events:none;transition:all .3s;display:flex;align-items:center;gap:10px;}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+#toast .tdot{width:6px;height:6px;border-radius:50%;background:var(--green);}
+.copy-btn{cursor:pointer;}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important;}}
 </style>
 </head>
 <body>
+<div id="sprog"></div>
 <div id="cur"></div>
 <div id="curring"></div>
 
 <div id="loader">
-  <div class="loader-name">SURENDAR R S — INITIALIZING</div>
-  <div class="loader-track"><div class="loader-fill"></div></div>
-  <div class="loader-status">LOADING PORTFOLIO...</div>
+  <div class="boot-box">
+    <div class="boot-head"><span>AVIATOOL_OS // BOOT SEQUENCE</span><span class="bh-dot"></span></div>
+    <div class="boot-log" id="bootlog"></div>
+    <div class="boot-bar-row"><span class="boot-pct" id="bootpct">0%</span><div class="boot-track"><div class="boot-fill" id="bootfill"></div></div></div>
+  </div>
+</div>
+
+<div id="toast"><span class="tdot"></span><span id="toast-msg">Copied</span></div>
+
+<div id="mobilemenu">
+  <a href="#about"><span>01</span>About</a>
+  <a href="#skills"><span>02</span>Skills</a>
+  <a href="#apps"><span>03</span>Apps</a>
+  <a href="#projects"><span>04</span>Projects</a>
+  <a href="#services"><span>05</span>Services</a>
+  <a href="#contact"><span>06</span>Contact</a>
+  <div class="mm-foot">
+    <a href="https://www.linkedin.com/in/surendar-r-s-038773256/" target="_blank" rel="noopener">LINKEDIN ↗</a>
+    <a href="https://wa.me/919632584378" target="_blank" rel="noopener">WHATSAPP ↗</a>
+    <a href="tel:+919632584378">+91 96325 84378</a>
+  </div>
+</div>
+
+<div id="cmdk-overlay">
+  <div class="cmdk-box">
+    <div class="cmdk-input-row"><span>⌘</span><input id="cmdk-input" type="text" placeholder="Jump to a section, app, or project..." autocomplete="off"></div>
+    <div class="cmdk-list" id="cmdk-list"></div>
+    <div class="cmdk-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> select</span><span><kbd>esc</kbd> close</span></div>
+  </div>
 </div>
 
 <nav>
@@ -314,8 +337,10 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
     <a href="#contact">CONTACT</a>
   </div>
   <div class="nav-cta">
+    <button class="cmdk-btn" id="cmdk-trigger" aria-label="Open command palette"><span>SEARCH</span><kbd>⌘K</kbd></button>
     <a class="nav-btn" href="https://www.linkedin.com/in/surendar-r-s-038773256/" target="_blank" rel="noopener">LINKEDIN ↗</a>
     <a class="nav-btn hi" href="tel:+919632584378">+91 96325 84378</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -328,14 +353,21 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
       <div class="tw-wrap" id="tw"><span class="caret"></span></div>
       <p class="hero-p">Intern App Developer at <b>Trilochana Aerospace &amp; Defence Technologies</b> — building AviaTool, a production Flutter/Firebase MRO system. <b>Presidency University</b> CSE undergraduate delivering iOS, Android &amp; full-stack web products end-to-end.</p>
       <div class="hero-btns">
-        <a class="hbtn s" href="#apps">VIEW MY APPS →</a>
+        <a class="hbtn s magnetic" href="#apps">VIEW MY APPS →</a>
+        <a class="hbtn o" href="#contact">HIRE ME</a>
+        <a class="hbtn o" href="https://www.linkedin.com/in/surendar-r-s-038773256/" target="_blank" rel="noopener">LINKEDIN ↗</a>
       </div>
       <div class="hero-stats">
         <div class="stat"><div class="n" data-count="5">0</div><div class="l">FLUTTER APPS</div></div>
         <div class="stat"><div class="n" data-count="4">0</div><div class="l">LIVE WEB APPS</div></div>
-        <div class="stat"><div class="n" data-count="1.5">0</div><div class="l">YEARS EXPERIENCE</div></div>
-      <div class="itr"><span class="k">EDUCATION</span><span class="v">Presidency University · CSE</span></div>
-      <div class="itr"><span class="k">EXPERIENCE</span><span class="v">1.5 years</span></div>
+        <div class="stat"><div class="n" data-count="1.5">0</div><div class="l">YEARS CODING</div></div>
+      </div>
+      <div class="hud">
+        <div class="hud-cell"><span class="hud-dot"></span><b>AVAILABLE</b> FOR HIRE</div>
+        <div class="hud-cell">POS <b id="hud-coords">12.9716°N 77.5946°E</b></div>
+        <div class="hud-cell">IST <b id="hud-clock">--:--:--</b></div>
+        <div class="hud-cell">BUILD <b>v2026.07</b></div>
+      </div>
     </div>
     <div class="hero-vis rvr">
       <div class="ring"><div class="rdot"></div></div>
@@ -356,9 +388,9 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
   <h2 class="ht">Who I <em>Am</em></h2>
   <div class="about-g">
     <div class="rvl">
-      <p><b>Surendar R S</b> is a full stack and cross-platform mobile developer based in <b>Bengaluru, India</b>. I intern as an App Developer at <b>Trilochana Aerospace &amp; Defence Technologies</b>, where I build AviaTool — a production-grade Flutter/Firebase MRO application covering engineer check-in/out, tool inventory, calibration alerts, QR attendance scanning, admin reporting, and PDF/CSV export.</p>
-      <p>Outside aerospace, I ship independent products: AI interview platforms, job portals, salary expense trackers, fitness apps, and book utilities — each taken from concept to a live deployed URL.</p>
-      <p>I pair development with practical <b>digital marketing</b> expertise, helping small businesses launch online with products that are actually found and used. UPI and Razorpay integrations are standard in my India-focused builds.</p>
+      <p><b>Surendar R S</b> is a full stack and cross-platform mobile developer based in <b>Bengaluru, India</b>. He interns as an App Developer at <b>Trilochana Aerospace &amp; Defence Technologies</b>, where he builds AviaTool — a production-grade Flutter/Firebase MRO application covering engineer check-in/out, tool inventory, calibration alerts, QR attendance scanning, admin reporting, and PDF/CSV export.</p>
+      <p>Outside aerospace, he ships independent products: AI interview platforms, job portals, salary expense trackers, fitness apps, and book utilities — each taken from concept to a live deployed URL.</p>
+      <p>He pairs development with practical <b>digital marketing</b> expertise, helping small businesses launch online with products that are actually found and used. UPI and Razorpay integrations are standard in his India-focused builds.</p>
     </div>
     <div class="info-table rvr">
       <div class="itr"><span class="k">ROLE</span><span class="v">Full Stack &amp; App Developer</span></div>
@@ -377,28 +409,28 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
   <div class="sec-eyebrow">02 / SKILLS</div>
   <h2 class="ht">Tech <em>Stack</em></h2>
   <div class="skills-g rv">
-    <div class="sk-panel">
+    <div class="sk-panel spotlight">
       <h3><span class="ico">📱</span>App Development</h3>
       <div class="sbi"><div class="sbi-t"><span class="nm">Flutter &amp; Dart</span><span class="pc">92%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="92"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">Firebase / Firestore</span><span class="pc">88%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="88"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">iOS &amp; Android</span><span class="pc">85%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="85"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">Push Notifications · FCM</span><span class="pc">80%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="80"></div></div></div>
     </div>
-    <div class="sk-panel">
+    <div class="sk-panel spotlight">
       <h3><span class="ico">🌐</span>Web &amp; Backend</h3>
       <div class="sbi"><div class="sbi-t"><span class="nm">JavaScript / React</span><span class="pc">85%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="85"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">Java / Spring Boot</span><span class="pc">80%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="80"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">REST APIs / WebSockets</span><span class="pc">82%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="82"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">SQL / Firestore / H2</span><span class="pc">78%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="78"></div></div></div>
     </div>
-    <div class="sk-panel">
+    <div class="sk-panel spotlight">
       <h3><span class="ico">⚙️</span>Tools &amp; Systems</h3>
       <div class="sbi"><div class="sbi-t"><span class="nm">UI/UX Design Systems</span><span class="pc">87%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="87"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">PDF / Reports / Export</span><span class="pc">85%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="85"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">QR Scanning / Audit</span><span class="pc">82%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="82"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">Predictive Analytics</span><span class="pc">72%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="72"></div></div></div>
     </div>
-    <div class="sk-panel">
+    <div class="sk-panel spotlight">
       <h3><span class="ico">📈</span>Growth &amp; Marketing</h3>
       <div class="sbi"><div class="sbi-t"><span class="nm">Business Websites</span><span class="pc">90%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="90"></div></div></div>
       <div class="sbi"><div class="sbi-t"><span class="nm">SEO &amp; Local Discovery</span><span class="pc">78%</span></div><div class="sbi-track"><div class="sbi-fill" data-w="78"></div></div></div>
@@ -408,37 +440,18 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
   </div>
 </div>
 
-<div id="nptel" class="wrap" style="padding-top:0;">
-  <div class="sec-eyebrow">02b / CERTIFICATIONS</div>
-  <h2 class="ht">NPTEL <em>Courses</em></h2>
-  <div class="skills-g rv">
-    <div class="sk-panel">
-      <h3><span class="ico">🎓</span>Affective Computing</h3>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Consolidated score</span><span class="pc">63%</span></div></div>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Online Assignments</span><span class="pc">25/25</span></div></div>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Proctored Exam</span><span class="pc">37.5/75</span></div></div>
-    </div>
-    <div class="sk-panel">
-      <h3><span class="ico">🎓</span>Introduction to Information Retrieval</h3>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Consolidated score</span><span class="pc">53%</span></div></div>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Online Assignments</span><span class="pc">22.53/25</span></div></div>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Proctored Exam</span><span class="pc">30/75</span></div></div>
-    </div>
-    <div class="sk-panel">
-      <h3><span class="ico">🎓</span>Introduction to Large Language Models (LLMs)</h3>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Consolidated score</span><span class="pc">55%</span></div></div>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Online Assignments</span><span class="pc">24.22/25</span></div></div>
-      <div class="sbi"><div class="sbi-t"><span class="nm">Proctored Exam</span><span class="pc">31.25/75</span></div></div>
-    </div>
-  </div>
-  <p style="margin-top:18px;color:var(--mid);">Certificate images available on request — I can upload the scanned certificates if you want them shown here.</p>
-</div>
-
 <div id="apps" class="wrap" style="padding-top:0;">
   <div class="sec-eyebrow">03 / APP SCREENS</div>
   <h2 class="ht">Real <em>Builds</em></h2>
+  <div class="filter-row rv">
+    <button class="ftab active" data-filter="all">ALL BUILDS</button>
+    <button class="ftab" data-filter="avia">AVIATOOL</button>
+    <button class="ftab" data-filter="fit">FITNESS</button>
+    <button class="ftab" data-filter="exp">FINANCE</button>
+    <button class="ftab" data-filter="job">JOBS</button>
+  </div>
 
-  <div class="app-section rv">
+  <div class="app-section rv" data-tag="avia">
     <div class="app-hdr">
       <h3>AviaTool — Aviation MRO &amp; Inventory System</h3>
       <div class="tags"><span class="atag hi">FLUTTER · FIREBASE</span><span class="atag">TRILOCHANA AEROSPACE</span><span class="atag">INTERN PROJECT</span></div>
@@ -451,11 +464,11 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
     </div>
     <div class="apk-row">
       <div class="apk-l"><div class="apk-box">APK</div><div><h4>AviaTool — Sample Build Available</h4><p>Internal MRO tool · request sample APK via WhatsApp</p></div></div>
-      <a class="obtn" href="https://wa.me/919632584378?text=Hi%20Surendar%2C%20I%27d%20like%20the%20AviaTool%20sample%20APK." target="_blank" rel="noopener">REQUEST APK →</a>
+      <a class="obtn magnetic" href="https://wa.me/919632584378?text=Hi%20Surendar%2C%20I%27d%20like%20the%20AviaTool%20sample%20APK." target="_blank" rel="noopener">REQUEST APK →</a>
     </div>
   </div>
 
-  <div class="app-section rv">
+  <div class="app-section rv" data-tag="fit">
     <div class="app-hdr">
       <h3>Fitness Tracker — Daily Readiness &amp; Workout Log</h3>
       <div class="tags"><span class="atag hi">FLUTTER</span><span class="atag">PERSONAL BUILD</span></div>
@@ -466,7 +479,7 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
     </div>
   </div>
 
-  <div class="app-section rv">
+  <div class="app-section rv" data-tag="exp">
     <div class="app-hdr">
       <h3>Salary Expense — Personal Finance Tracker</h3>
       <div class="tags"><span class="atag hi">FLUTTER</span><span class="atag">EXPENSE TRACKER</span></div>
@@ -479,7 +492,7 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
     </div>
   </div>
 
-  <div class="app-section rv">
+  <div class="app-section rv" data-tag="job">
     <div class="app-hdr">
       <h3>PGRKAM — Job Recommendation Platform</h3>
       <div class="tags"><span class="atag hi">FLUTTER</span><span class="atag">JOB PLATFORM</span></div>
@@ -498,28 +511,28 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
   <div class="sec-eyebrow">04 / WEB PROJECTS</div>
   <h2 class="ht">Live <em>Links</em></h2>
   <div class="proj-g rv">
-    <a class="pc" href="https://aiii-vt9q.onrender.com/" target="_blank" rel="noopener">
+    <a class="pc spotlight" href="https://aiii-vt9q.onrender.com/" target="_blank" rel="noopener">
       <div class="pc-num">PROJECT — 01</div>
       <div class="pc-name">AI Interview &amp; Assistant Platform</div>
       <div class="pc-desc">Full stack AI-driven interview and interaction platform — deployed and serving users live.</div>
       <div class="pc-tags"><span class="pc-tag">AI</span><span class="pc-tag">FULL STACK</span><span class="pc-tag">DEPLOYED</span></div>
       <div class="pc-url">aiii-vt9q.onrender.com</div>
     </a>
-    <a class="pc" href="https://books-1yw1.onrender.com" target="_blank" rel="noopener">
+    <a class="pc spotlight" href="https://books-1yw1.onrender.com" target="_blank" rel="noopener">
       <div class="pc-num">PROJECT — 02</div>
       <div class="pc-name">Books Platform</div>
       <div class="pc-desc">Book management and utility web application — full stack build, live on Render.</div>
       <div class="pc-tags"><span class="pc-tag">WEB APP</span><span class="pc-tag">FULL STACK</span><span class="pc-tag">LIVE</span></div>
       <div class="pc-url">books-1yw1.onrender.com</div>
     </a>
-    <a class="pc" href="https://v0-live-website-hosting.vercel.app/ai_interview_portal.html" target="_blank" rel="noopener">
+    <a class="pc spotlight" href="https://v0-live-website-hosting.vercel.app/ai_interview_portal.html" target="_blank" rel="noopener">
       <div class="pc-num">PROJECT — 03</div>
       <div class="pc-name">AI Interview Portal</div>
       <div class="pc-desc">Voice-driven mock interview tool with DSA, Android, CSS &amp; Java modes using Web Speech API and AI scoring.</div>
       <div class="pc-tags"><span class="pc-tag">SPEECH API</span><span class="pc-tag">AI</span><span class="pc-tag">VERCEL</span></div>
       <div class="pc-url">v0-live-website-hosting.vercel.app</div>
     </a>
-    <a class="pc" href="https://job-fa.onrender.com" target="_blank" rel="noopener">
+    <a class="pc spotlight" href="https://job-fa.onrender.com" target="_blank" rel="noopener">
       <div class="pc-num">PROJECT — 04</div>
       <div class="pc-name">Job Portal</div>
       <div class="pc-desc">Full stack job listing and application platform — live and deployed, powering job seekers and employers.</div>
@@ -533,16 +546,16 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
   <div class="sec-eyebrow">05 / SERVICES</div>
   <h2 class="ht">What I <em>Build</em></h2>
   <div class="svc-g rv">
-    <div class="svc"><div class="svc-n">SVC — 01</div><div class="svc-ico">📱</div><h3>Mobile Apps (iOS &amp; Android)</h3><p>Flutter builds for both platforms from a single codebase — production-grade, Firebase-backed, with beautiful UI and real-world workflows.</p></div>
-    <div class="svc"><div class="svc-n">SVC — 02</div><div class="svc-ico">🌐</div><h3>Full Stack Web Apps</h3><p>End-to-end web applications with React frontends, Java Spring Boot or Node backends, and database integrations — delivered to a live URL.</p></div>
-    <div class="svc"><div class="svc-n">SVC — 03</div><div class="svc-ico">🛠</div><h3>Admin &amp; Inventory Systems</h3><p>Dashboards, inventory tracking, role-based access, PDF reporting, QR scanning — the same systems powering AviaTool, applied to your operations.</p></div>
-    <div class="svc"><div class="svc-n">SVC — 04</div><div class="svc-ico">📈</div><h3>Digital Marketing &amp; Growth</h3><p>Local SEO, Google Business setup, social media presence, and content strategy — so your new app or website actually gets found and used.</p></div>
-    <div class="svc"><div class="svc-n">SVC — 05</div><div class="svc-ico">💳</div><h3>Payments &amp; Launch</h3><p>UPI, Razorpay, QR payment flows, and full deployment — your business set up to accept real orders and payments from day one.</p></div>
-    <div class="svc"><div class="svc-n">SVC — 06</div><div class="svc-ico">🤖</div><h3>AI-Powered Tools</h3><p>AI interview platforms, chatbots, smart dashboards with predictive analytics — built and deployed with real API integrations.</p></div>
+    <div class="svc spotlight"><div class="svc-n">SVC — 01</div><div class="svc-ico">📱</div><h3>Mobile Apps (iOS &amp; Android)</h3><p>Flutter builds for both platforms from a single codebase — production-grade, Firebase-backed, with beautiful UI and real-world workflows.</p></div>
+    <div class="svc spotlight"><div class="svc-n">SVC — 02</div><div class="svc-ico">🌐</div><h3>Full Stack Web Apps</h3><p>End-to-end web applications with React frontends, Java Spring Boot or Node backends, and database integrations — delivered to a live URL.</p></div>
+    <div class="svc spotlight"><div class="svc-n">SVC — 03</div><div class="svc-ico">🛠</div><h3>Admin &amp; Inventory Systems</h3><p>Dashboards, inventory tracking, role-based access, PDF reporting, QR scanning — the same systems powering AviaTool, applied to your operations.</p></div>
+    <div class="svc spotlight"><div class="svc-n">SVC — 04</div><div class="svc-ico">📈</div><h3>Digital Marketing &amp; Growth</h3><p>Local SEO, Google Business setup, social media presence, and content strategy — so your new app or website actually gets found and used.</p></div>
+    <div class="svc spotlight"><div class="svc-n">SVC — 05</div><div class="svc-ico">💳</div><h3>Payments &amp; Launch</h3><p>UPI, Razorpay, QR payment flows, and full deployment — your business set up to accept real orders and payments from day one.</p></div>
+    <div class="svc spotlight"><div class="svc-n">SVC — 06</div><div class="svc-ico">🤖</div><h3>AI-Powered Tools</h3><p>AI interview platforms, chatbots, smart dashboards with predictive analytics — built and deployed with real API integrations.</p></div>
   </div>
   <div class="svc-cta rv">
     <p>Need something <span>custom built and deployed</span>? Let's talk — from first brief to live product.</p>
-    <a class="obtn" href="#contact">START A PROJECT →</a>
+    <a class="obtn magnetic" href="#contact">START A PROJECT →</a>
   </div>
 </div>
 
@@ -597,7 +610,43 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:48px;text
 </footer>
 
 <script>
-window.addEventListener('load',function(){setTimeout(function(){document.getElementById('loader').classList.add('gone');},2100);});
+// SCROLL PROGRESS
+(function(){var sp=document.getElementById('sprog');window.addEventListener('scroll',function(){var h=document.documentElement,st=h.scrollTop||document.body.scrollTop,sh=(h.scrollHeight||document.body.scrollHeight)-h.clientHeight;sp.style.width=(sh>0?(st/sh)*100:0)+'%';});})();
+
+// BOOT SEQUENCE LOADER
+(function(){
+  var lines=[
+    {t:'> mounting filesystem'},
+    {t:'> init firebase.auth()'},
+    {t:'> init firestore.realtime()'},
+    {t:'> loading flutter.engine'},
+    {t:'> calibration.check()'},
+    {t:'> compiling portfolio.dart'},
+    {t:'> systems nominal'}
+  ];
+  var log=document.getElementById('bootlog'),fill=document.getElementById('bootfill'),pct=document.getElementById('bootpct');
+  var i=0,p=0;
+  function step(){
+    if(i<lines.length){
+      var row=document.createElement('div');
+      row.innerHTML=lines[i].t+' <span class="ok">[OK]</span>';
+      log.appendChild(row);
+      log.scrollTop=log.scrollHeight;
+      i++;
+      p=Math.min(100,Math.round((i/lines.length)*100));
+      fill.style.width=p+'%';
+      pct.textContent=p+'%';
+      setTimeout(step,150+Math.random()*140);
+    }else{
+      var cl=document.createElement('div');
+      cl.className='cur-line';
+      cl.innerHTML='> ready<span class="bl"></span>';
+      log.appendChild(cl);
+      setTimeout(function(){document.getElementById('loader').classList.add('gone');},450);
+    }
+  }
+  setTimeout(step,300);
+})();
 var cur=document.getElementById('cur'),ring=document.getElementById('curring'),mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
 (function anim(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(anim);})();
@@ -621,7 +670,7 @@ var ro=new IntersectionObserver(function(entries){entries.forEach(function(e){if
 document.querySelectorAll('.rv,.rvl,.rvr').forEach(function(el){ro.observe(el);});
 var so=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll('.sbi-fill').forEach(function(b){b.style.width=b.dataset.w+'%';});so.unobserve(e.target);}});},{threshold:.2});
 document.querySelectorAll('.skills-g').forEach(function(el){so.observe(el);});
-var co=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll('.n[data-count]').forEach(function(el){var t=+el.dataset.count,n=0;function s(){n=Math.min(n+1,t);el.textContent=n+(n>=t?'+':'');if(n<t)setTimeout(s,110);}s();});co.unobserve(e.target);}});},{threshold:.5});
+var co=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll('.n[data-count]').forEach(function(el){var t=+el.dataset.count,isDec=t%1!==0,step=isDec?0.1:1,n=0;function s(){n=Math.min(n+step,t);n=Math.round(n*10)/10;el.textContent=(isDec?n.toFixed(1):n)+(n>=t?'+':'');if(n<t)setTimeout(s,isDec?60:110);}s();});co.unobserve(e.target);}});},{threshold:.5});
 document.querySelectorAll('.hero-stats').forEach(function(el){co.observe(el);});
 document.querySelectorAll('.pcard').forEach(function(p){
   p.addEventListener('mousemove',function(e){var r=p.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;p.querySelector('.pcard-inner').style.transform='rotateY('+(x*14)+'deg) rotateX('+(-y*10)+'deg) translateY(-10px)';});
@@ -639,6 +688,139 @@ document.getElementById('cf').addEventListener('submit',function(e){
 });
 var secs=['about','skills','apps','projects','services','contact'];
 window.addEventListener('scroll',function(){var y=window.scrollY+120;secs.forEach(function(id){var el=document.getElementById(id);if(!el)return;var top=el.offsetTop,h=el.offsetHeight;if(y>=top&&y<top+h){document.querySelectorAll('.nav-links a').forEach(function(a){a.style.color='';});var link=document.querySelector('.nav-links a[href="#'+id+'"]');if(link)link.style.color='var(--amber)';}});});
+
+// HUD LIVE CLOCK (IST)
+(function(){var el=document.getElementById('hud-clock');if(!el)return;function tick(){var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));var hh=String(now.getHours()).padStart(2,'0'),mm=String(now.getMinutes()).padStart(2,'0'),ss=String(now.getSeconds()).padStart(2,'0');el.textContent=hh+':'+mm+':'+ss;}tick();setInterval(tick,1000);})();
+
+// MOBILE MENU
+(function(){
+  var btn=document.getElementById('menu-btn'),menu=document.getElementById('mobilemenu');
+  if(!btn||!menu)return;
+  btn.addEventListener('click',function(){btn.classList.toggle('open');menu.classList.toggle('open');document.body.style.overflow=menu.classList.contains('open')?'hidden':'';});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){btn.classList.remove('open');menu.classList.remove('open');document.body.style.overflow='';});});
+})();
+
+// SPOTLIGHT CARD TRACKING
+document.querySelectorAll('.spotlight').forEach(function(card){
+  card.addEventListener('mousemove',function(e){
+    var r=card.getBoundingClientRect();
+    card.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    card.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+});
+
+// MAGNETIC BUTTONS
+document.querySelectorAll('.magnetic').forEach(function(btn){
+  btn.addEventListener('mousemove',function(e){
+    var r=btn.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;
+    btn.style.transform='translate('+(x*0.18)+'px,'+(y*0.28)+'px)';
+  });
+  btn.addEventListener('mouseleave',function(){btn.style.transform='';});
+});
+
+// FILTER TABS (app screens)
+(function(){
+  var tabs=document.querySelectorAll('.ftab'),sections=document.querySelectorAll('.app-section[data-tag]');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active');});
+      tab.classList.add('active');
+      var f=tab.dataset.filter;
+      sections.forEach(function(s){
+        if(f==='all'||s.dataset.tag===f){s.classList.remove('hidden-f');}else{s.classList.add('hidden-f');}
+      });
+    });
+  });
+})();
+
+// TOAST + COPY TO CLIPBOARD (phone numbers)
+function showToast(msg){
+  var t=document.getElementById('toast'),m=document.getElementById('toast-msg');
+  m.textContent=msg;t.classList.add('show');
+  clearTimeout(window._toastTimer);
+  window._toastTimer=setTimeout(function(){t.classList.remove('show');},2200);
+}
+document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    if(navigator.clipboard){
+      e.preventDefault();
+      var num=a.getAttribute('href').replace('tel:','');
+      navigator.clipboard.writeText(num).then(function(){showToast('Phone number copied — '+num);});
+    }
+  });
+});
+
+// COMMAND PALETTE
+(function(){
+  var overlay=document.getElementById('cmdk-overlay'),input=document.getElementById('cmdk-input'),list=document.getElementById('cmdk-list'),trigger=document.getElementById('cmdk-trigger');
+  var items=[
+    {label:'About',tag:'SECTION',href:'#about'},
+    {label:'Skills',tag:'SECTION',href:'#skills'},
+    {label:'App Screens',tag:'SECTION',href:'#apps'},
+    {label:'Web Projects',tag:'SECTION',href:'#projects'},
+    {label:'Services',tag:'SECTION',href:'#services'},
+    {label:'Contact',tag:'SECTION',href:'#contact'},
+    {label:'AviaTool — Aviation MRO System',tag:'APP',href:'#apps'},
+    {label:'Fitness Tracker',tag:'APP',href:'#apps'},
+    {label:'Salary Expense Tracker',tag:'APP',href:'#apps'},
+    {label:'PGRKAM Job Platform',tag:'APP',href:'#apps'},
+    {label:'AI Interview & Assistant Platform',tag:'LIVE',href:'https://aiii-vt9q.onrender.com/'},
+    {label:'Books Platform',tag:'LIVE',href:'https://books-1yw1.onrender.com'},
+    {label:'AI Interview Portal',tag:'LIVE',href:'https://v0-live-website-hosting.vercel.app/ai_interview_portal.html'},
+    {label:'Job Portal',tag:'LIVE',href:'https://job-fa.onrender.com'},
+    {label:'LinkedIn Profile',tag:'LINK',href:'https://www.linkedin.com/in/surendar-r-s-038773256/'},
+    {label:'WhatsApp',tag:'LINK',href:'https://wa.me/919632584378'},
+    {label:'Call +91 96325 84378',tag:'LINK',href:'tel:+919632584378'}
+  ];
+  var active=0,filtered=items;
+
+  function render(){
+    list.innerHTML='';
+    if(filtered.length===0){list.innerHTML='<div class="cmdk-empty">No matches — try another term</div>';return;}
+    filtered.forEach(function(it,idx){
+      var row=document.createElement('div');
+      row.className='cmdk-item'+(idx===active?' active':'');
+      row.innerHTML='<span class="ci-l">'+it.label+'</span><span class="ci-tag">'+it.tag+'</span>';
+      row.addEventListener('click',function(){go(it);});
+      list.appendChild(row);
+    });
+  }
+  function go(it){
+    close();
+    if(it.href.indexOf('#')===0){
+      var el=document.querySelector(it.href);
+      if(el)el.scrollIntoView({behavior:'smooth'});
+    }else{
+      window.open(it.href,'_blank');
+    }
+  }
+  function open(){
+    overlay.classList.add('open');
+    input.value='';filtered=items;active=0;render();
+    setTimeout(function(){input.focus();},60);
+    document.body.style.overflow='hidden';
+  }
+  function close(){
+    overlay.classList.remove('open');
+    document.body.style.overflow='';
+  }
+  input.addEventListener('input',function(){
+    var q=input.value.toLowerCase();
+    filtered=items.filter(function(it){return it.label.toLowerCase().indexOf(q)!==-1||it.tag.toLowerCase().indexOf(q)!==-1;});
+    active=0;render();
+  });
+  input.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){e.preventDefault();active=Math.min(active+1,filtered.length-1);render();}
+    else if(e.key==='ArrowUp'){e.preventDefault();active=Math.max(active-1,0);render();}
+    else if(e.key==='Enter'){e.preventDefault();if(filtered[active])go(filtered[active]);}
+    else if(e.key==='Escape'){close();}
+  });
+  trigger.addEventListener('click',open);
+  overlay.addEventListener('click',function(e){if(e.target===overlay)close();});
+  document.addEventListener('keydown',function(e){
+    if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();overlay.classList.contains('open')?close():open();}
+  });
+})();
 </script>
 </body>
 </html>
